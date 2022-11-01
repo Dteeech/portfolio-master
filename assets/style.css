@@ -1,220 +1,230 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
-body{
-    padding: 0 2%;
-
-    margin: 0;
-    font-family: 'Oswald', 'sans serif';
-    font-size: large;
-    color: white;
-    background-color: #303030;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap");
+@import "normalize.css";
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Oswald", "sans serif";
+  font-size: large;
+  color: white;
+  background-color: #303030;
+  
+  
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: inherit;
-    position: sticky;
-    top: 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  top: 0;
+  padding-right: 2%;
 }
 
 nav .profile {
-display: flex;
-align-items: center;
-
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
 }
 
 nav .profile img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 nav .profile h1 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 nav ul a {
-text-decoration: none;
-color: inherit;
-margin-left: 20px;
-cursor: pointer;
-
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+nav ul a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
 }
 
 nav ul a:hover {
-    border-bottom: solid #00FF00 1px;
-    border-bottom-color: #00FF00 ;
-    color: #00FF00;
+  border-bottom: solid #00ff00 1px;
+  border-bottom-color: #00ff00;
+  color: #00ff00;
 }
-#page{
-    margin: 4%;
+
+#page {
+  height: 100%;
+  width: auto;
 }
 #page header {
-    margin-top: 5%;
-    max-width: 80%;
+    background-image: url('images/setup-ordinateurs.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#banderolle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    opacity: 0.9;
 
 }
 #page header h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-family: 'bebas neue', 'sans serif';
-    font-size: 6vw;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "bebas neue", "sans serif";
+  font-size: 6vw;
+
+  
+
 }
 
 #page header h2 {
-line-height: 50px;
-font-size: 25px;
-color: inherit;
-border-bottom: solid#00FF00 4px;
-padding: 0 0 80px 0;
+  font-size: 25px;
+  margin: 0%;
+  margin-bottom: 10px;
+ 
 }
 #page header button {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0%;
-    font-size: 15px;
-    font-weight: bold;
-    padding-bottom: 2px;
-    border-bottom: 1px solid gray;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0%;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 1px solid gray;
 }
 #page header button:hover {
-color: gray;
-border-bottom-color: black;
+  color: gray;
+  border-bottom-color: black;
 }
-#page #main_image {
-    margin-top: 5%;
-}
-#page #main_image img {
-    max-width: 100%;
-    width: 850px;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 90px;
-}
-#page #projects_section {
-    
-    margin-top: 5%;
-}
-#page #projects_section h1{
-    font-family: 'bebas neue';
-    text-transform: uppercase;
-    font-size: 3vw;
 
+#page #projects_section {
+  margin-top: 5%;
+}
+#page #projects_section h1 {
+  font-family: "bebas neue";
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+#page #projects_section h2 {
+  font-size: 2vw;
 }
 #page #projects_section #projects {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-#page #projects_section #projects a{
-text-decoration: none;
-color: inherit;
+#page #projects_section #projects a {
+  text-decoration: none;
+  color: inherit;
 }
 #page #projects_section #projects a:hover {
-    color:#ccc;
-    }
-#page #projects_section #projects .project{
-    margin-right: 40px;
-    max-width: 195px;
-
+  color: #ccc;
+}
+#page #projects_section #projects .project {
+  margin-right: 40px;
+  margin-left: 25px;
 }
 #page #projects_section #projects .project .description {
-    font-size: 1vw;
-
+  font-size: 1.5vw;
 }
 #page #projects_section #projects .project .dates {
-font-size: 1vw;
-color: rgb(145, 145, 145);
+  font-size: 1vw;
+  color: rgb(145, 145, 145);
+}
+#page 
+#page #background h2 {
+  font-family: "bebas neue";
+  text-transform: uppercase;
+  font-size: 3vw;
 }
 
-#page #cv h2 {
-    font-family: 'bebas neue';
-    text-transform: uppercase;
-    font-size: 3vw;
-}
-
-#page #cv img {
-    width: 650px;
-    height: auto;
+#page #background img {
+  width: 650px;
+  height: auto;
 }
 
 footer {
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: black ;
-    color: white;
-    padding: 10px;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
-
 
 footer .column a {
-    font-size: 20px;
-    color:#ccc;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  text-decoration: none;
 }
-footer .column p{
-    font-size: 20px;
-    color:#ccc;
-    cursor: pointer;
-    text-decoration: none;
-    
+footer .column p {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 footer .column a:hover {
-    color: white;
+  color: white;
 }
 footer .column p:hover {
-    color: white;
+  color: white;
 }
 
-    /* version mobile */
- 
-    
-@media screen and (max-width : 700px) {
-    
-    nav {
-        justify-content: center;
-    }
-    nav ul {
-        display: none;
-    }
+/* version mobile */
 
-    #page header {
-        margin-top: 10%;
-        max-width: 100%;
-    }
+@media screen and (max-width: 700px) {
+  nav {
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+  }
 
-    #page #projects_section {
-        margin-top: 15%;
-    }
-    #page #projects_section h2 {
-        font-size: 1.5em;
-    }
-    #page #projects_section #projects .project {
-        margin-right: 0%;
-        margin-bottom: 20px;
-        max-width: 100%;
+  #page header {
+    margin-top: 10%;
+    max-width: 100%;
+  }
 
-    }
-   
-    footer {
-        justify-content: flex-start;
-        width: 95%;
-    }
-    
+  #page #projects_section {
+    margin-top: 15%;
+  }
+  #page #projects_section h2 {
+    font-size: 1.5em;
+  }
+  #page #projects_section #projects .project {
+    margin-right: 0%;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
 
+  footer {
+    justify-content: flex-start;
+    width: 95%;
+  }
 }
