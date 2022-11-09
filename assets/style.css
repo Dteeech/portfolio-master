@@ -69,24 +69,26 @@ nav ul a:hover {
 #page {
   height: 100%;
   width: auto;
+
 }
 #page header {
-    background-image: url('images/setup-ordinateurs.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-image: url('images/fond-site.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 160px;
 }
 #banderolle{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #303030;
-    opacity: 0.9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  opacity: 0.9;
 
 }
 #page header h1 {
@@ -94,9 +96,6 @@ nav ul a:hover {
   text-transform: uppercase;
   font-family: "bebas neue", "sans serif";
   font-size: 6vw;
-
-  
-
 }
 
 #page header h2 {
@@ -120,7 +119,9 @@ nav ul a:hover {
   color: gray;
   border-bottom-color: black;
 }
-
+#page main{
+  margin-left: 25px;
+}
 #page #projects_section {
   margin-top: 5%;
 }
@@ -131,6 +132,7 @@ nav ul a:hover {
 }
 #page #projects_section h2 {
   font-size: 2vw;
+  
 }
 #page #projects_section #projects {
   display: flex;
@@ -154,18 +156,39 @@ nav ul a:hover {
   font-size: 1vw;
   color: rgb(145, 145, 145);
 }
-#page 
 #page #background h2 {
   font-family: "bebas neue";
   text-transform: uppercase;
   font-size: 3vw;
 }
-
-#page #background img {
-  width: 650px;
-  height: auto;
+#CV{
+  display: flex;
+  flex-direction: column;
 }
 
+#boutton_cv{
+  width: 60px;
+  height: 20px;
+  border: black solid 3px;
+  background-color: #303030;
+  color: black;
+  padding: 5px;
+  margin: 0%;
+  box-sizing: content-box;
+  transition: 0.4s linear;
+  align-self: center;
+
+}
+#boutton_cv:hover{
+  border: #00ff00 solid 3px;
+  background-color: #303030;
+  color: #00ff00;
+  
+}
+#boutton_cv p{
+  padding: 0%;
+  margin: 0%;
+}
 footer {
   margin-top: 5%;
   display: flex;
