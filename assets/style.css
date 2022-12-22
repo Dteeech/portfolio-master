@@ -129,7 +129,8 @@ h2{
 
 #page #projects_section #projects {
   display: flex;
-  margin: 0 0 0 40px;
+    margin: auto;
+    justify-content: center;
 }
 #page #projects_section #projects a {
   text-decoration: none;
