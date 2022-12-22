@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Isaac's Portfolio</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/vanilla-tilt-min.js"></script>
 </head>
+
 <body>
   <nav>
     <div class="profile">
@@ -40,46 +42,63 @@
       <section id="projects_section">
         <h2>Projets réalisés</h2>
         <div id="projects">
-          <a href="https://dteeech.github.io/projet_booki/">
+          <a href="https://dteeech.github.io/projet_booki/" data-tilt>
             <div class="project">
               <h3>Site de réservation</h3>
               <p class="description">
-                Création d'un site de réservation en ligne <br />à partir
-                d'une maquette.
+                Création d'un site de réservation en ligne <br> à partir d'une maquette.
               </p>
-              <p class="dates">Date 05/2022</p>
+              <p class="dates">
+                Date 05/2022
+              </p>
             </div>
           </a>
-          <div class="project">
-            <h3>En cours</h3>
-            <p class="description">Site vitrine d'art abstrait</p>
-            <p class="dates">Date indéterminée</p>
-          </div>
-          <div class="project">
-            <h3>En cours</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="dates"></p>
-          </div>
+          <a href="https://guilmault-catherine.fr/" data-tilt>
+            <div class="project">
+              <h3>En cours</h3>
+              <p class="description">
+                Site vitrine d'art abstrait
+              </p>
+              <p class="dates">
+                Date 11/2022
+              </p>
+            </div>
+          </a>
+          <a href="#" data-tilt>
+            <div class="project">
+              <h3>En cours</h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, <br>
+                consectetur adipiscing elit.
+              </p>
+              <p class="dates"></p>
+            </div>
+          </a>
+          <a href="#" data-tilt>
+            <div class="project">
+              <h3>En cours</h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, <br>
+                consectetur adipiscing elit.
+              </p>
+              <p class="dates"></p>
+            </div>
+          </a>
         </div>
       </section>
       <section id="background">
-        <div id="parcours">
-          <h2>Mon parcours</h2>
-        </div>
+
         <div id="CV">
           <h2>Curricullum vitae</h2>
-          <button src="assets/images/cv_isaac_developpeur_web.pdf"id="boutton_cv">
-            <p> Mon CV</p> 
-          </button>
+          <img src="assets/images/cv.jpg" alt="Cv de isaac marshall" data-tilt>
+          <a href="assets/images/CV MARSHALL Isaac Développeur web (10).pdf" id ="download"download="CV MARSHALL Isaac Développeur web.pdf">Téléchargez le CV au format pdf ici</a>
         </div>
       </section>
     </main>
     <footer>
       <div class="column">
         <h3>Me contacter</h3>
-        <p>Mail : isaak.marshall6@gmail.com</p>
+        <a href="mailto:isaak.marshall6@gmail.com">Mail : isaak.marshall6@gmail.com</a>
         <p>Discord : Izk#7413</p>
       </div>
       <div class="column">
