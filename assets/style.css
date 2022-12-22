@@ -204,7 +204,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: black;
+  background-color: rgb(37, 37, 37);
   color: rgba(255, 255, 255, 0.863);
   padding: 10px;
 }
