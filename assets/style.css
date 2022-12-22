@@ -51,6 +51,8 @@ nav ul a {
   margin-left: 20px;
   cursor: pointer;
   transition: 0.4s linear;
+  font-size: X-large;
+  margin-right: 50px;
 }
 
 nav ul a:hover {
