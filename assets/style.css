@@ -30,14 +30,15 @@ nav .profile {
 }
 
 nav .profile img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
+  margin-right: 50px;
   border-radius: 50%;
 }
 
-nav .profile h1 {
-  margin-left: 10px;
+nav .profile h2 {
+  font-size: xx-large;
 }
 
 nav ul {
@@ -97,8 +98,8 @@ h2{
 }
 
 #page header h2 {
-  font-size: 25px;
-  margin: 0%;
+  font-size: 2vw;
+  margin: auto;
   margin-bottom: 10px;
  
 }
@@ -154,6 +155,7 @@ h2{
   border:1px solid #00ff00;
   color: #00ff00;
   box-shadow: 7px 7px 12px 3px  #00ff00;
+  font-size: large;
   
 }
 #page #projects_section #projects .project .description {
